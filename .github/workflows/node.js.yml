@@ -10,15 +10,8 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  build-deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
       - uses: actions/checkout@v4
       - name: Install dependencies
@@ -26,9 +19,12 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy
+        if: github.ref == 'refs/heads/main'
+        run: npm run deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: main
-          force_orphan: true
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+        publish_branch: main
+        force_orphan: false
+
