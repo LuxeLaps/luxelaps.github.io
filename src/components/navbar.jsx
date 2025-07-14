@@ -1,23 +1,21 @@
+import { Link } from 'react-router-dom';
+
 function Navbar() {
     return (
         <nav>
             <ul>
-                {/* Left section: Logo and title */}
                 <div>
                     <img src="/logo.png" alt="Logo"/>
                     <span>Portfolio</span>
-                
-
-                {/* Right section: Navigation links */}
-                <li>
-                    <a href="/" >Home</a>   
-                    <a href="/about">About</a>
-                    <a href="/services">Services</a>
-                    <a href="/projects">Projects</a>
-                    <a href="/blog">Blog</a>
-                </li>
+                    <li>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">About</Link>
+                        <Link to="/services">Services</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/blog">Blog</Link>
+                    </li>
                 </div>
-                </ul>
+            </ul>
         </nav>
     );
 }
