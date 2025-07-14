@@ -8,6 +8,7 @@ import About from './components/pages/about'
 import Services from './components/pages/services'
 import Projects from './components/pages/projects'
 import Blog from './components/pages/blog'
+import ContactUs from './components/ContactUs'
 function App() {
   return(<>
     <Router>
@@ -15,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<><Services /><ContactUs /></>} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
