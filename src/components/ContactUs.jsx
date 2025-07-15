@@ -6,6 +6,8 @@ export default function ContactUs() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    // empty the form
+    form.current.reset();
 
     emailjs
       .sendForm('service_t045bhq', 'template_uya6lbb', form.current, {

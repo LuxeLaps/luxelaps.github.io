@@ -25,8 +25,8 @@ export default function Services(){
         <div>
             <h3>Contact Us</h3>
             <p>If you have any questions or want to discuss your project, feel free to reach out!</p>
-            <p>Email: <a href="mailto:raosatyam0007@gmail.com" placeholder="Email"></a></p>
-            <p>Phone: <a href="tel:+919999999999" placeholder="Phone"></a></p>
+            {/* <p>Email: <a type="email" placeholder="Email"></a></p> */}
+            {/* <p>Phone: <a  type="tel" placeholder="Phone"></a></p> */}
         </div>
         </>
 
