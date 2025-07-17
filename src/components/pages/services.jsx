@@ -1,34 +1,44 @@
-export default function Services(){
-    return(
-        <>
-        <div>
-            <h1>Services</h1>
-            <div><h3>Our Services</h3>
-            <div>
-                <h5>Web Development</h5>
-                <p>We create responsive and modern websites tailored to your needs.</p>
-                <p>Pricing: $199 one time or contact us for a custom quote.</p>
-            </div>
-            <div>
-                <h5>Mobile App Development</h5>
-                <p>We develop user-friendly mobile applications for both Android and iOS.</p>
-                <p>Pricing: Starting at $499.</p>
-            </div>
-            <div>
-                <h5>SEO Optimization</h5>
-                <p>Improve your website's visibility on search engines with our SEO services.</p>
-                <p>Pricing: $99 per month.</p>
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FaCode, FaMobileAlt, FaSearch } from 'react-icons/fa';
+import '../styles/Services.css';
 
-            </div>
-        </div>
-        </div>
-        <div>
-            <h3>Contact Us</h3>
-            <p>If you have any questions or want to discuss your project, feel free to reach out!</p>
-            {/* <p>Email: <a type="email" placeholder="Email"></a></p> */}
-            {/* <p>Phone: <a  type="tel" placeholder="Phone"></a></p> */}
-        </div>
-        </>
+const services = [
+  {
+    icon: <FaCode size={32} />, title: 'Web Development',
+    desc: 'Responsive, modern websites tailored to your needs.', price: '$199 one time or custom quote.'
+  },
+  {
+    icon: <FaMobileAlt size={32} />, title: 'Mobile App Development',
+    desc: 'User-friendly mobile apps for Android and iOS.', price: 'Starting at $499.'
+  },
+  {
+    icon: <FaSearch size={32} />, title: 'SEO Optimization',
+    desc: 'Improve your website’s visibility on search engines.', price: '$99 per month.'
+  },
+];
 
-    )
-}
+export default function Services() {
+  return (
+    <motion.section className="services-section" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+      <h1>Services</h1>
+      <div className="services-list">
+        {services.map((service, i) => (
+          <motion.div
+            className="service-card"
+            key={service.title}
+            whileHover={{ scale: 1.05, boxShadow: '0 8px 32px rgba(0,0,0,0.15)' }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 + i * 0.1 }}
+          >
+            <div className="service-icon">{service.icon}</div>
+            <h3>{service.title}</h3>
+            <p>{service.desc}</p>
+            <span className="service-price">{service.price}</span>
+          </motion.div>
+        ))}
+      </div>
+    </motion.section>
+  );
+} 

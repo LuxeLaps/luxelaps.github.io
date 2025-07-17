@@ -1,9 +1,21 @@
-export default function Home(){
-    return(<>
-    <div className="home">
-        <img src="/images/hero.png" alt="Hero Image" />
-    <h1>Hey, I'm Satyam</h1>
-    <h2>Welcome to my Portfolio website.</h2>
-    </div>
-    </>)
-}
+import React from 'react';
+import { motion } from 'framer-motion';
+import '../styles/Home.css';
+import Hero from '../../assets/hero.png'
+
+export default function Home() {
+  return (
+    <section className="hero-section">
+      <motion.div className="hero-content" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+        <img src={Hero} alt="Hero" className="hero-img" />
+        <h1>
+          Hey, I'm <span className="highlight">Satyam</span>
+        </h1>
+        <h2>Welcome to my Portfolio website.</h2>
+        <motion.a href="/projects" className="cta-btn" whileHover={{ scale: 1.08 }}>
+          View My Work
+        </motion.a>
+      </motion.div>
+    </section>
+  );
+} 

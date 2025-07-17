@@ -1,0 +1,29 @@
+/* Footer Styles */
+
+.footer {
+  background: var(--color-card);
+  color: var(--color-text);
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  border-top: 1px solid var(--color-border);
+  margin-top: 3rem;
+  box-shadow: 0 -2px 16px rgba(124, 58, 237, 0.04);
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-icon {
+  color: var(--color-primary);
+  font-size: 2rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.footer-icon:hover {
+  color: var(--color-accent);
+  transform: scale(1.15) translateY(-2px);
+} 

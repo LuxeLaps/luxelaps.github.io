@@ -1,0 +1,57 @@
+/* About Section Styles */
+
+.about-section {
+  background: var(--color-card);
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 24px rgba(124, 58, 237, 0.08);
+  padding: 2.5rem 2rem;
+  max-width: 700px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.about-img {
+  width: 100px;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 16px rgba(124, 58, 237, 0.08);
+}
+
+.about-section h1 {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-content {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.about-content h3 {
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.about-content ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list li {
+  background: var(--color-secondary);
+  color: #fff;
+  padding: 0.4rem 1.2rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+} 

@@ -1,25 +1,39 @@
-export default function About(){
-    return (
-        <div className="about">
-            <img src="/images/hero.png" alt="Hero Image" />
-            <h1>About Satyam</h1>
-            <h3>Experience</h3>
-            <ul>
-                <li>Job Title - Company (Year)</li>
-                <li>Job Title - Company (Year)</li>
-                <li>Job Title - Company (Year)</li>
-            </ul>
-            <h3>Skills</h3>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-            </ul>
-            <h3>Education</h3>
-            <ul>
-                <li>Degree - Institution (Year)</li>
-                <li>Degree - Institution (Year)</li>
-            </ul>
-        </div>
-    )
-}
+import React from 'react';
+import { motion } from 'framer-motion';
+import '../styles/About.css';
+import Hero from '../../assets/hero.png'
+
+export default function About() {
+  return (
+    <motion.section className="about-section" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+      <img src={Hero} alt="Hero" className="about-img" />
+      <h1>About Satyam</h1>
+      <motion.div className="about-content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
+        <h3>Experience</h3>
+        <ul>
+          <li>Fullstack Developer - LuxeLaps (2025)</li>
+          <li>Freelancer (2021-2023)</li>
+        </ul>
+        <h3>Skills</h3>
+        <ul className="skills-list">
+          <li>React</li>
+          <li>NextJS 15</li>
+          <li>Python</li>
+          <li>My SQL, Mongo db, Supabase</li>
+          <li>JavaScript (ES6+)</li>
+          <li>CSS3</li>          
+          <li>Responsive Design</li>
+          <li>Git, Github, Github pages</li>
+          <li>AI</li>
+
+          
+        </ul>
+        <h3>Education</h3>
+        <ul>
+          <li>BCA - Computer Science,MDU (2024-202*)</li>
+          <li>Senior Secondary - Vijaya Sr. Sec. School(2024)</li>
+        </ul>
+      </motion.div>
+    </motion.section>
+  );
+} 
