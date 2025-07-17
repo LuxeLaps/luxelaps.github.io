@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import '../styles/Footer.css';
 
 const socialLinks = [
-  { href: 'https://linkedin.com/in/yourprofile', icon: <FaLinkedin />, label: 'LinkedIn' },
-  { href: 'https://github.com/raosatyam152', icon: <FaGithub />, label: 'GitHub' },
-  { href: 'https://twitter.com/yourprofile', icon: <FaTwitter />, label: 'Twitter' },
+  { href: 'https://www.linkedin.com/in/satyamyadav08/', icon: <FaLinkedin />, label: 'LinkedIn' },
+  { href: 'https://github.com/RaoSam-Code', icon: <FaGithub />, label: 'GitHub' },
+  { href: '/#', icon: <FaTwitter />, label: 'Twitter' },
 ];
 
 export default function Footer() {

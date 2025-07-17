@@ -11,9 +11,8 @@
 }
 
 .about-img {
-  width: 100px;
+  -ms-flex-item-align: auto;
   margin-bottom: 1.5rem;
-  border-radius: 50%;
   box-shadow: 0 2px 16px rgba(124, 58, 237, 0.08);
 }
 

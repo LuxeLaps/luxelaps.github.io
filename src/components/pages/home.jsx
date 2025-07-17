@@ -6,8 +6,8 @@ import Hero from '../../assets/hero.png'
 export default function Home() {
   return (
     <section className="hero-section">
+      <img src={Hero} alt="Hero" className="hero-img" />
       <motion.div className="hero-content" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-        <img src={Hero} alt="Hero" className="hero-img" />
         <h1>
           Hey, I'm <span className="highlight">Satyam</span>
         </h1>

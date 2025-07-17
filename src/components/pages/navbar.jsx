@@ -20,7 +20,8 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    // Navbar container with position: relative for absolute positioning of theme toggle
+      // Navbar container with position: relative for absolute positioning of theme toggle
+      <>
     <div className="navbar">
       {/* Logo and site name wrapped in NavLink to home */}
       <NavLink to="/" className="navbar-logo" aria-label="Go to home page">
@@ -79,7 +80,9 @@ export default function Navbar() {
         )}
       </AnimatePresence>
       {/* Absolutely positioned theme toggle for accessibility and separation from nav links */}
-      <ThemeToggle />
+      
     </div>
-  );
+      <div className="theme-toggle-container">
+      </div>
+  </>);
 } 
