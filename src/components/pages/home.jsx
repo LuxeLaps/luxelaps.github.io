@@ -12,7 +12,7 @@ export default function Home() {
           Hey, I'm <span className="highlight">Satyam</span>
         </h1>
         <h2>Welcome to my Portfolio website.</h2>
-        <motion.a href="/projects" className="cta-btn" whileHover={{ scale: 1.08 }}>
+        <motion.a to="/projects" className="cta-btn" whileHover={{ scale: 1.08 }}>
           View My Work
         </motion.a>
       </motion.div>
