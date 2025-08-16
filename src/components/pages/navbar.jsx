@@ -26,7 +26,7 @@ export default function Navbar() {
       {/* Logo and site name wrapped in NavLink to home */}
       <NavLink to="/" className="navbar-logo" aria-label="Go to home page">
         <img src={logo} alt="Logo" className="logo-img" />
-        <span className="logo-text">Satyam</span>
+        <span className="logo-text">Cyber Souls</span>
       </NavLink>
       {/* Desktop nav links */}
       <ul className="navbar-links">

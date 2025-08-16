@@ -5,7 +5,7 @@ import '../styles/Footer.css';
 
 const socialLinks = [
   { href: 'https://www.linkedin.com/in/satyamyadav08/', icon: <FaLinkedin />, label: 'LinkedIn' },
-  { href: 'https://github.com/RaoSam-Code', icon: <FaGithub />, label: 'GitHub' },
+  { href: 'https://github.com/LuxeLaps', icon: <FaGithub />, label: 'GitHub' },
   { href: '/#', icon: <FaTwitter />, label: 'Twitter' },
 ];
 
@@ -20,7 +20,7 @@ export default function Footer() {
         ))}
       </motion.div>
       <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}>
-        &copy; {new Date().getFullYear()} Satyam's Portfolio. All rights reserved.
+        &copy; {new Date().getFullYear()} LuxeLaps. All rights reserved.
       </motion.p>
     </footer>
   );

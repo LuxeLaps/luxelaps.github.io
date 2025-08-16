@@ -4,7 +4,7 @@ import '../styles/Blog.css';
 
 const posts = [
   {
-    title: 'How I Built My Portfolio',
+    title: 'How Luexlaps was build',
     desc: 'A behind-the-scenes look at building this site with React and Vite.',
     link: '#',
   },

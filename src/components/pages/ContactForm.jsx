@@ -28,7 +28,7 @@ export default function ContactForm() {
 
   return (
     <motion.section className="contact-section" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-      <h2>Contact Me</h2>
+      <h2>Contact Us</h2>
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <label>Name</label>
         <input type="text" name="user_name" required />
